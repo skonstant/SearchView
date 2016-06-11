@@ -40,7 +40,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -70,7 +69,7 @@ public class SearchView extends FrameLayout implements View.OnClickListener { //
     private View mShadowView;
     private View mDividerView;
     private CardView mCardView;
-    private EditText mEditText;
+    private SearchEditText mEditText;
     private ImageView mBackImageView;
     private ImageView mVoiceImageView;
     private ImageView mEmptyImageView;
@@ -178,7 +177,8 @@ public class SearchView extends FrameLayout implements View.OnClickListener { //
         mEmptyImageView.setOnClickListener(this);
         mEmptyImageView.setVisibility(View.GONE);
 
-        mEditText = (EditText) findViewById(R.id.editText_input);
+        mEditText = (SearchEditText) findViewById(R.id.editText_input);
+        mEditText.setSearchView(this);
         mEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {

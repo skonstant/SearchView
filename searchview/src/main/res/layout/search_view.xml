@@ -37,7 +37,7 @@
                     android:layout_height="@dimen/search_icon"
                     android:contentDescription="@string/search_content_description" />
 
-                <EditText
+                <com.lapism.searchview.SearchEditText
                     android:id="@+id/editText_input"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
                     android:windowSoftInputMode="stateAlwaysHidden">
 
                     <requestFocus />
-                </EditText>
+                </com.lapism.searchview.SearchEditText>
                 <!--
                                 android:background="?android:attr/listDivider"
                  app:cardUseCompatPadding="true"
