@@ -46,12 +46,12 @@ dependencies {
 }
 
 publish {
-    userOrg = 'lapism'
-    groupId = 'com.lapism'
+    userOrg = 'skonstant'
+    groupId = 'com.vol'
     artifactId = 'searchview'
     publishVersion = '3.0.3'
     desc = 'SearchView Library'
-    website = 'https://github.com/lapism/SearchView'
+    website = 'https://github.com/skonstant/SearchView'
 }
 
 // build first
