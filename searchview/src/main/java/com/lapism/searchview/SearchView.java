@@ -848,13 +848,18 @@ public class SearchView extends FrameLayout implements View.OnClickListener { //
         anim.setDuration(duration);
         anim.setAnimationListener(new Animation.AnimationListener() {
             @Override
-            public void onAnimationStart(Animation animation) {
-                // TODO same as REVEAL
+            public void onAnimationEnd(Animation animation) {
+                if (mEditText.length() > 0) {
+                    mEditText.getText().clear();
+                }
+                mEditText.requestFocus();
             }
 
             @Override
-            public void onAnimationEnd(Animation animation) {
-
+            public void onAnimationStart(Animation animation) {
+                if (mOnOpenCloseListener != null) {
+                    mOnOpenCloseListener.onOpen();
+                }
             }
 
             @Override
