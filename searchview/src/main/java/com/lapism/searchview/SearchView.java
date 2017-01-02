@@ -360,6 +360,10 @@ public class SearchView extends FrameLayout implements View.OnClickListener { //
     public void setText(@StringRes int text) {
         mEditText.setText(text);
     }
+    
+    public void append(CharSequence text) {
+        mEditText.append(text);
+    }
 
     public void setTextSize(float size) {
         mEditText.setTextSize(TypedValue.COMPLEX_UNIT_SP, size);
