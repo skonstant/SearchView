@@ -12,7 +12,7 @@ buildscript {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "24.0.0 rc4"
+    buildToolsVersion "25.0.2"
 
     sourceSets {
         main.res.srcDirs 'res', 'res-public'
@@ -21,8 +21,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 23
-        versionCode 3
-        versionName "3.0.3"
+        versionCode 7
+        versionName "3.0.6"
 		vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
@@ -49,7 +49,7 @@ publish {
     userOrg = 'skonstant'
     groupId = 'com.vol'
     artifactId = 'searchview'
-    publishVersion = '3.0.5'
+    publishVersion = '3.0.6'
     desc = 'SearchView Library'
     website = 'https://github.com/skonstant/SearchView'
 }
