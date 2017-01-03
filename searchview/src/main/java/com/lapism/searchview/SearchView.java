@@ -602,9 +602,9 @@ public class SearchView extends FrameLayout implements View.OnClickListener { //
                 }
             }
         } else {
-            if (mEditText.length() > 0) {
+            /*if (mEditText.length() > 0) {
                 mEditText.getText().clear();
-            }
+            }*/
             mEditText.clearFocus();
         }
     }
